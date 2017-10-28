@@ -21,7 +21,7 @@ function limitChangeLength(elm, limitLength) {
 
 
 //角色编辑框 
-function editRoleModal(data) {
+function editRole(data) {
 
 	limitChangeLength($(".sliderInput input[type='text']"),12)
 	var maxNum = data.roleMaxNum;
