@@ -8,6 +8,7 @@
 						"public/common/vakata-jstree/dist/themes/default/style.min.css",
 						"public/common/vakata-jstree/dist/jstree.min.js",
 						"public/common/pagination/simplePagination.css",
+						"public/common/pagination/jquery.simplePagination.js",
 						"static/template_blue/style/role/listREM.css",
 						"static/template_blue/style/role/authmodal.css",
 						"css/user/auth.css",
@@ -23,7 +24,8 @@
 						"css/database/backup.css",
 						"static/template_blue/style/role/editnew.css",
 						"public/common/bootstrapvalidator/js/bootstrapValidator.js",
-						"public/common/bootstrapvalidator/css/bootstrapValidator.css"
+						"public/common/bootstrapvalidator/css/bootstrapValidator.css",
+				
 						]
 		$.each(arr,function(i,v){
 			if(v.substring(v.length-3) == "css"){
