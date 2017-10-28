@@ -1,29 +1,29 @@
 (function($){
 	$(function(){
 					var arr = [
-						"common/icheck/skins/all.css",
-						"common/icheck/icheck.js",
-						"js/index/getDom.js",
+						"public/common/icheck/skins/all.css",
+						"public/common/icheck/icheck.js",
+						"static/template_blue/script/index/getDom.js",
 						"css/editModal/editModal.css",
-						"common/vakata-jstree/dist/themes/default/style.min.css",
-						"common/vakata-jstree/dist/jstree.min.js",
-						"js/pagination/simplePagination.css",
-						"css/role/listREM.css",
-						"css/role/authmodal.css",
+						"public/common/vakata-jstree/dist/themes/default/style.min.css",
+						"public/common/vakata-jstree/dist/jstree.min.js",
+						"public/common/pagination/simplePagination.css",
+						"static/template_blue/style/role/listREM.css",
+						"static/template_blue/style/role/authmodal.css",
 						"css/user/auth.css",
-						"css/role/addsREM.css",
-						"css/role/role.css",
+						"static/template_blue/style/role/addsREM.css",
+						"static/template_blue/style/role/role.css",
 						"https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css",
 						"css/user/edit.css",
 						"css/resources/add.css",
-						"js/icheck/custom.min.js",
-						"css/role/view.css",
+						"public/common/icheck/custom.min.js",
+						"static/template_blue/style/role/view.css",
 						"css/database/progress.css",
 						"js/database/progress.js",
 						"css/database/backup.css",
-						"css/role/editnew.css",
-						"common/bootstrapvalidator/js/bootstrapValidator.js",
-						"common/bootstrapvalidator/css/bootstrapValidator.css"
+						"static/template_blue/style/role/editnew.css",
+						"public/common/bootstrapvalidator/js/bootstrapValidator.js",
+						"public/common/bootstrapvalidator/css/bootstrapValidator.css"
 						]
 		$.each(arr,function(i,v){
 			if(v.substring(v.length-3) == "css"){

@@ -15,14 +15,14 @@
 		<!--引入 bootstrap.css 主css文件-->
 		<link rel="stylesheet" href="public/common/bootstrap/css/bootstrap.css" />
 		<!--公共的初始化样式 -->
-		<link rel="stylesheet" href="static/template_blue/css/common/common.css" />
+		<link rel="stylesheet" href="static/template_blue/style/common/common.css" />
 		<!-- 侧导航样式 -->
-		<link rel="stylesheet" href="static/template_blue/css/common/slidenavREM.css" />
+		<link rel="stylesheet" href="static/template_blue/style/common/slidenavREM.css" />
 		<link rel="stylesheet" href="public/common/fonts/iconfont.css" />
 		<!--bootstrap图标库-->
 		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/3.0.0/css/font-awesome.min.css" />
 		<!--头部引入-->
-		<link rel="stylesheet" href="static/template_blue/css/index/index.css" />
+		<link rel="stylesheet" href="static/template_blue/style/index/index.css" />
 	</head>
 
 	<body>
@@ -52,17 +52,17 @@
 
 		<!-- 进度展示模态框 -->
 		<div class="modal fade" id="leading-progress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  	<div class="modal-dialog" role="document">
-		    	<div class="modal-content">
-		    		<div class="progressbox">
-		    			<h3>正在导入...</h3>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="progressbox">
+						<h3>正在导入...</h3>
 						<div class="progress progress-striped active">
 							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 								<span class="pro-text">0%</span>
 							</div>
 						</div>
 						<p>*请勿进行其他操作！您的任何操作都可能导致此次导入失败！</p>
-		    		</div>
+					</div>
 					<div class="leading-res-success">
 						<div class="titlezl">
 							<p>提示信息</p>
@@ -93,13 +93,13 @@
 							<p>您未能成功恢复数据库！</p>
 						</div>
 					</div>
-		    	</div>
-		  	</div>
+				</div>
+			</div>
 		</div>
 		<!-- 备注信息展示模态框 -->
 		<div class="modal fade" id="database-remarks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		  	<div class="modal-dialog" role="document">
-		    	<div class="modal-content">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
 					<div class="titlezl">
 						<p>查看数据库备注信息</p>
 						<div class="btns">
@@ -109,10 +109,10 @@
 						</div>
 					</div>
 					<div class="database-remark">
-						
+
 					</div>
-		    	</div>
-		  	</div>
+				</div>
+			</div>
 		</div>
 		<!--没有权限模态框-->
 		<div id="powerModal">
@@ -198,7 +198,7 @@
 					<div class="pull_right_font col-xs-3 col-lg-3  visible-lg-inline-block " style="padding:0;">
 						<p>您好,GIGI</p>
 					</div>
-					<img src="static/template_blue/image/common/out.png"  class="setout visible-lg-inline-block" alt="" />
+					<img src="static/template_blue/image/common/out.png" class="setout visible-lg-inline-block" alt="" />
 				</div>
 				<!-- /.navbar-collapse -->
 			</div>
@@ -233,7 +233,7 @@
 								<span class="iconfont icon-icon"></span>
 							</li>
 							<ul>
-								<li url="${pageContext.request.contextPath}/backend/authority/role/list">
+								<li url="templates/template_blue/authority/role/list.html">
 									<div class="iconfont icon-liebiao3 icon-slidenav"></div>
 									<p>角色列表</p>
 									<div class="hoverline"></div>
@@ -377,14 +377,13 @@
 					<li>
 						<div class="iconfont icon-shouhui btn-fold"></div>
 					</li>
-					
-					
+
 				</ul>
 			</aside>
 			<!-- 左侧面滑动导航菜单结束 -->
 			<!-- 右侧主容器 -->
 			<div class="right-container">
-			<div class="loading_ajax_dom">
+				<div class="loading_ajax_dom">
 					<img src="static/template_blue/image/common/loading5.gif" alt="" style='width:400px;margin-top:1.2rem;'>
 				</div>
 				<div class="ajax_dom"></div>
@@ -732,18 +731,23 @@
 			</div>
 		</div>
 		<!--jquery引入-->
-			<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-			<!--侧导航的js-->
-			<script src="static/template_blue/script/common/slidenav.js"></script>
-			<!--flatui js库-->
-			<script src="https://cdn.bootcss.com/flat-ui/2.3.0/js/flat-ui.min.js"></script>
-			<!--生成其他页面样式操作-->
-			<script src="static/template_blue/script/index/get.js"></script>
-			<!--引入检查文件-->
-			<script src="public/common/jquery-ui1.12.1/jquery-ui.js"></script>
-			<script src="static/template_blue/script/index/jquery.easypiechart/jquery.easypiechart.js"></script>
-			<script src="static/template_blue/script/index/index.js"></script>
-			<script src="static/template_blue/script/common/promptBox.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+		<!--侧导航的js-->
+		<script src="static/template_blue/script/common/slidenav.js"></script>
+		<!--flatui js库-->
+		<script src="https://cdn.bootcss.com/flat-ui/2.3.0/js/flat-ui.min.js"></script>
+		<!--生成其他页面样式操作-->
+		<script src="static/template_blue/script/index/get.js"></script>
+		<!--引入检查文件-->
+		<script src="public/common/jquery-ui1.12.1/jquery-ui.js"></script>
+		<script src="static/template_blue/script/index/jquery.easypiechart/jquery.easypiechart.js"></script>
+		<script src="static/template_blue/script/index/index.js"></script>
+		<script src="static/template_blue/script/common/promptBox.js"></script>
+		<!--时间插件-->
+		<script src="static/template_blue/script/skycons/skycons.js"></script>
+		<!--天气插件-->
+		<script src="static/template_blue/script/raphael/raphael.min.js"></script>
+		<script src="static/template_blue/script/raphael/morris.js"></script>
 	</body>
 
 </html>
