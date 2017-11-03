@@ -1,0 +1,104 @@
+<script  src="static/default/script/validate/validate.js" th:src="@{/default/script/validate/validate.js}"></script>
+<div id="editModal" class="modalCon modal fade bs-example-modal-lg modalToBody" tabindex="-1" role="dialog" th:fragment="editUser">
+	<div class="maxcontainer editpage modal-contentbox" narrowClassName="#editModal">
+		<ol class="breadcrumb">
+			<li>
+				<i class="glyphicon glyphicon-home"></i>
+				<a href="#" data="2" url="home">首页</a>
+			</li>
+			<li>
+				<a href="#">用户管理</a>
+			</li>
+			<li>
+				<a href="#" url="">用户列表</a>
+			</li>
+			<li class="active">编辑用户</li>
+			<div class="nav-search" id="nav-search">
+				<form class="form-search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="搜索你想找到的..."/>
+						<span class="input-group-btn">
+			        <button class="btn btn-default" type="button">
+						<img src="static/default/image/common/iconsearch.png" alt="" th:src="@{/default/image/common/iconsearch.png}"/>
+			        </button>
+			        </span>
+					</div>
+					<!-- /input-group -->
+				</form>
+			</div>
+		</ol>
+		<!--  页面中的红色提示框-->
+		<div class="alert alert-danger">
+			<i class="glyphicon glyphicon-hand-right"></i> 温馨提示：此页面展示角色查看操作。单击右方x号，可以关闭此条提示语！
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		</div>
+		<div class="title">
+			<p>编辑用户</p>
+			<div class="btns">
+
+				<a href="javascript:;" class="closeAction" data-dismiss="modal">
+					<img src="static/default/image/common/modal1.png" alt="" th:src="@{/default/image/common/modal1.png}"/>
+				</a>
+			</div>
+		</div>
+		<div class="form_content">
+			<form class="form-user-editlg newform">
+				<div class="formhead">青柠云后台管理系统</div>
+				<div class="form-group input">
+					<label for="">用户名称：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<input type="hidden" id="edit_userId"/>
+							<input type="text" id="edit_userName" class="form-control rolenameinput" placeholder="请输入用户名称"/>
+							<span class="limitlength">15</span>
+							<span class="errormessage errormessage-user-edit-name">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group input">
+					<label for="">用户密码：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<input type="password" id="edit_userPass" class="form-control rolenameinput" placeholder="请输入用户密码"/>
+							<span class="limitlength">15</span>
+							<span class="errormessage errormessage-user-edit-name">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group phone">
+					<label for="">联系电话：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<input type="text" class="form-control rolenameinput" placeholder="请输入联系电话" id="edit_phone"/>
+							<span class="limitlength">15</span>
+							<span class="errormessage errormessage-user-edit-phone">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group email">
+					<label for="">邮箱：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<input type="text" class="form-control rolenameinput" placeholder="请输入邮箱" id="edit_email"/>
+							<span class="limitlength">15</span>
+							<span class="errormessage errormessage-user-edit-email">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="btnbox">
+					<button type="button" class="btn btn-default submitbtn-role-edit" id="submit_editUser">确定</button>
+					<button type="button" class="btn btn-default closeAction">取消</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>

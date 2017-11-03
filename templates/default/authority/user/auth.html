@@ -1,0 +1,103 @@
+<!-- 用户授权 -->
+<!-- Modal -->
+<div class="modal fade modalToBody" id="user-authorization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" th:fragment="authUser">
+	<div class="maxcontainer editpage modal-contentbox" narrowClassName="#user-authorization">
+		<ol class="breadcrumb">
+			<li>
+				<i class="glyphicon glyphicon-home"></i>
+				<a href="#" data="2" url="home">首页</a>
+			</li>
+			<li>
+				<a href="#">用户管理</a>
+			</li>
+			<li>
+				<a href="#" url="">用户列表</a>
+			</li>
+			<li class="active">用户授权</li>
+			<div class="nav-search" id="nav-search">
+				<form class="form-search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="搜索你想找到的..."/>
+						<span class="input-group-btn">
+			        <button class="btn btn-default" type="button">
+						<img src="static/default/image/common/iconsearch.png" alt="" th:src="@{/default/image/common/iconsearch.png}"/>
+			        </button>
+			        </span>
+					</div>
+					<!-- /input-group -->
+				</form>
+			</div>
+		</ol>
+		<!--  页面中的红色提示框-->
+		<div class="alert alert-danger">
+			<i class="glyphicon glyphicon-hand-right"></i> 温馨提示：此页面展示用户授权操作。单击右方x号，可以关闭此条提示语！
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		</div>
+		<div class="title">
+			<p>用户授权</p>
+			<div class="btns">
+				<a href="javascript:;" class="closeAction" data-dismiss="modal">
+					<img src="static/default/image/common/modal1.png" alt="" th:src="@{/default/image/common/modal1.png}"/>
+				</a>
+			</div>
+		</div>
+		<div class="form_content">
+			<form class="form-role-editlg newform">
+				<div class="formhead">青柠云后台管理系统</div>
+				<div class="form-group input">
+					<label for="">用户名称：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax form_input sliderInput">
+							<input type="text" class="form-control rolenameinput" id="auth_userName" placeholder="请输入角色名称" disabled="disabled"/>
+							<span class="limitlength">15</span>
+							<span class="errormessage errormessage-role-edit-name">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group tree">
+					<label for="">用户授权：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<header>
+								<label for="checkallRoleaut" class="relateCtl">
+								<input  type="checkbox" name="checkallaut" class="checkallRoleaut"/>
+								选中全部
+							</label>
+								<label for='slidedownallRoleaut' class="relateCtl">
+								<input  type="checkbox" name="slidedownallaut" class="slidedownallRoleaut"/>
+								展开全部
+							</label>
+								<label class="prompt visible-md visible-lg relateCtl">
+								温馨小提示：此
+								<input  type="checkbox" name="disabled" checked="checked" disabled="disabled"/>
+								为您的上级权限您无权更改
+							</label>
+							</header>
+							<div class="treezl">
+								<div class="user-authorizationtree">
+
+								</div>
+							</div>
+
+							<label class="prompt visible-sm visible-xs">
+							温馨小提示：此
+							<input  type="checkbox" name="disabled" checked="checked" disabled="disabled"/>
+							为您的上级权限您无权更改
+						</label>
+
+							<span class="errormessage errormessage-role-edit-aut">
+			    		
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="btnbox">
+					<button type="button" class="btn btn-default submitbtn-role-edit" id="resSubmit">确定</button>
+					<button type="button" class="btn btn-default">取消</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

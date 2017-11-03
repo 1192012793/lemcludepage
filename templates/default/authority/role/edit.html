@@ -1,0 +1,122 @@
+<script  src="static/default/script/validate/validate.js " th:src="@{/default/script/validate/validate.js}"></script>
+<div id="editModal" class="modalCon modal fade bs-example-modal-lg editRole_modal  modalToBody" tabindex="-1" role="dialog" th:fragment="editRole">
+
+	<div class="maxcontainer editpage modal-contentbox" narrowClassName="#editModal">
+		<ol class="breadcrumb">
+			<li>
+				<i class="glyphicon glyphicon-home"></i>
+				<a href="#" data="2" url="home">首页</a>
+			</li>
+			<li>
+				<a href="#">角色管理</a>
+			</li>
+			<li>
+				<a href="#" url="">角色列表</a>
+			</li>
+			<li class="active">编辑角色</li>
+			<div class="nav-search" id="nav-search">
+				<form class="form-search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="搜索你想找到的..."/>
+						<span class="input-group-btn">
+			        <button class="btn btn-default" type="button">
+						<img src="static/default/image/common/iconsearch.png" alt="" th:src="@{/default/image/common/iconsearch.png}"/>
+			        </button>
+			        </span>
+					</div>
+					<!-- /input-group -->
+				</form>
+			</div>
+		</ol>
+		<!--  页面中的红色提示框-->
+		<div class="alert alert-danger">
+			<i class="glyphicon glyphicon-hand-right"></i> 温馨提示：此页面展示角色查看操作。单击右方x号，可以关闭此条提示语！
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		</div>
+		<div class="title">
+			<p>编辑角色</p>
+			<div class="btns">
+				<a href="javascript:;" class="closeAction" data-dismiss="modal">
+					<img src="static/default/image/common/modal1.png" alt="" th:src="@{/default/image/common/modal1.png}"/>
+				</a>
+			</div>
+		</div>
+		<div class="form_content">
+			<form class="form-role-editlg newform">
+				<div class="formhead">青柠云后台管理系统</div>
+				<div class="form-group input">
+					<label for="">角色名称：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax form_input sliderInput">
+							<input type="hidden" id="edit_roleId"/>
+							<input type="text" class="form-control rolenameinput" placeholder="请输入角色名称" id="edit_displayName"/>
+							<span class="limitlength">15</span>
+							<span class="errormessage errormessage-role-edit-name">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group select">
+					<label for="">父级角色：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<select name="fath" data-toggle="select" class=" select_roleList form-control select select-primary select-block mbl" id="edit_roleExtendPId">
+						</select>
+							<span class="errormessage errormessage-role-edit-fath">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group select">
+					<label for="">依赖角色：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<select name="yilai" data-toggle="select" class="select_roleList form-control select select-primary select-block mbl" id="edit_roleRelyId">
+							</select>
+							<span class="errormessage errormessage-role-edit-yilai">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group number">
+					<label for="">最大限制用户数：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax row-lg-h numCtr">
+							<a class="reduce active">
+								-
+							</a>
+							<div class="input">
+								<input type="text" id="edit_roleMaxNum" readonly="readonly" value='0' name="max_num"/>
+							</div>
+							<a class="add">
+								+
+							</a>
+							<span class="errormessage errormessage-role-edit-num">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group textarea">
+					<label for="">备注：</label>
+					<div class="inputwrapper">
+						<div class="inputwrappermax">
+							<textarea name="beizhu" id="edit_remarks" placeholder="请输入备注"></textarea>
+							<span class="errormessage errormessage-role-edit-num">
+			    		<!-- 您输入了特殊符号！ -->
+			    		</span>
+						</div>
+					</div>
+				</div>
+				<div class="btnbox">
+					<button type="button" class="btn btn-default submitbtn-role-edit" id="submit_editRole">确定</button>
+					<button type="button" class="btn btn-default closeAction">取消</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
